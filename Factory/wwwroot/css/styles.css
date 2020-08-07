@@ -23,3 +23,9 @@ div#footer {
 h1 {
   text-align: center;
 }
+
+body {
+  background-image: url(https://cdn.vox-cdn.com/thumbor/xTsXh7b3wS3tY11IfKnuinsJMFY=/59x0:939x495/1600x900/cdn.vox-cdn.com/assets/3170021/Seusville.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}

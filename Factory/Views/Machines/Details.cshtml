@@ -8,13 +8,11 @@
 <h1>Machine Details</h1>
 <hr>
 <h3>@Html.DisplayFor(model => model.MachineName)</h3>
-
-
-@if (@Model.Items.Count == 0)
+<hr>
+@if (@Model.Engineers.Count == 0)
 {
   <h3>No Engineers found</h3>
 }
-
 @foreach (var join in Model.Engineers)
 {
   <h3>@Html.ActionLink(@join.Engineer.Name, "Details", "Engineers", new { id = join.EngineerId })</h3>

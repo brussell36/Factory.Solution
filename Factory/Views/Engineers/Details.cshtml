@@ -15,17 +15,15 @@
 else
 {
   <h5>Machines this Engineer can work on:</h5>
-  <ul>
-    @foreach (var join in Model.Machines)
+  @foreach (var join in Model.Machines)
+  {
+    <h3>@Html.ActionLink(@join.Machine.MachineName, "Details", "Machines", new { id = join.Machine.MachineId })</h3>
+    @using (Html.BeginForm("DeleteMachine", "Engineers", new { id = Model.EngineerId }))
     {
-      <li>@join.Machine.MachineName</li>
-      @using (Html.BeginForm("DeleteMachine", "Engineers", new { id = Model.EngineerId }))
-      {
-        @Html.Hidden("joinId", @join.EngineerMachineId)
-        <input type="submit" value="Delete" class="btn btn-outline-dark" />
-      }
+      @Html.Hidden("joinId", @join.EngineerMachineId)
+      <input type="submit" value="Delete" class="btn btn-outline-dark" />
     }
-  </ul>
+  }
 }
 <hr>
 <h5>@Html.ActionLink("Add Machine to this Engineer", "AddMachine", new { id = Model.EngineerId })</h5>

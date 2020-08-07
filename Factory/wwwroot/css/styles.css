@@ -19,3 +19,7 @@ div#footer {
 .nav {
   background-color: rgba(245, 245, 245, 0.74);
 }
+
+h1 {
+  text-align: center;
+}

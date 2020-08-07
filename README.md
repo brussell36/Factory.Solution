@@ -1,3 +1,4 @@
+![Dr. Seuss background img](https://cdn.vox-cdn.com/thumbor/xTsXh7b3wS3tY11IfKnuinsJMFY=/59x0:939x495/1600x900/cdn.vox-cdn.com/assets/3170021/Seusville.png)
 # Dr. Snuess' Factory
 
 #### C# Friday Independant Project, 08.07.2020
@@ -15,6 +16,7 @@ _This application will help a factory owner keep track of all the enginners who 
 * Install [.Net Core](https://dotnet.microsoft.com/download/dotnet-core/2.2) 
 * To install the REPL dotnet script, run dotnet tool install -g dotnet-script in your terminal.
 * Run dotnet restore in terminal to get all dependencies.
+* Run dontnet build in terminal to make sure project has everything required and no issues.
 * Run the program with the command dotnet run.
 
 #### Additional Setup/Installation Notes:

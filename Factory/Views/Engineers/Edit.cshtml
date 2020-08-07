@@ -1,0 +1,22 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Factory.Models.Engineer
+
+<h1>Edit</h1>
+
+<h3>Edit this Engineer: @Html.DisplayFor(model => model.Name)</h3>
+
+@using (Html.BeginForm())
+{
+  <div class="form-group">
+    @Html.HiddenFor(model => model.EngineerId)
+    @Html.LabelFor(model => model.Name)
+    @Html.EditorFor(model => model.Name, null, new {@class="form-control"})
+    @Html.Label("Select Machine")
+    @Html.DropDownList("MachineId", null, new {@class="form-control"})
+  </div>
+  <input type="submit" value="Save" class="btn btn-outline-dark" />
+}
+<h5>@Html.ActionLink("Back to Engineer list", "Index")</h5>

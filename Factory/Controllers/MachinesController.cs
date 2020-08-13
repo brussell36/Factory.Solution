@@ -68,7 +68,7 @@ namespace Factory.Controllers
       var thisMachine = _db.Machines.FirstOrDefault(machine => machine.MachineId == id);
       _db.Machines.Remove(thisMachine);
       _db.SaveChanges();
-      return RedirectToAction("Details", new { id = id});
+      return RedirectToAction("Index");
     }
   }
 }

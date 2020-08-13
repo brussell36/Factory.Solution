@@ -14,17 +14,17 @@ _This application will help a factory owner keep track of all the enginners who 
 * Clone this repository from GitHub https://github.com/brussell36/Factory.Solution.git
 * Open the downloaded directory in a text editor of your choice. (VSCode, Atom, etc.)
 * Install [.Net Core](https://dotnet.microsoft.com/download/dotnet-core/2.2) 
-* To install the REPL dotnet script, run dotnet tool install -g dotnet-script in your terminal.
-* Run dotnet restore in terminal to get all dependencies.
-* Run dontnet build in terminal to make sure project has everything required and no issues.
-* Run the program with the command dotnet run.
+* To install the REPL dotnet script, run ```dotnet tool install -g dotnet-script``` in your terminal.
+* Run ```dotnet restore``` in terminal to get all dependencies.
+* Run ```dontnet build``` in terminal to make sure project has everything required and no issues.
+* Run the program with the command ```dotnet run```.
 
 #### Additional Setup/Installation Notes:
 
 * You will need to have MySQL installed on your computer to start the database for this project. 
-* Once you have it installed open your terminal and run mysql -uroot -pepicodus. This will start the mysql server on your computer. 
-* You will need to run the command dotnet ef migrations add Initial. This create a folder that holds information MySQL needs to create the database.
-* Then run dotnet ef database update. This will migrate the database to MySQL workbench where you can refresh the Schemas tab to make sure everything was created properly.
+* Once you have it installed open your terminal and ```run mysql -uroot -pepicodus```. This will start the mysql server on your computer. 
+* You will need to run the command ```dotnet ef migrations add Initial```. This create a folder that holds information MySQL needs to create the database.
+* Then run ```dotnet ef database update```. This will migrate the database to MySQL workbench where you can refresh the Schemas tab to make sure everything was created properly.
 * Then you will have the database correctly set up and you can start the project in a separate terminal that the one running mysql by running dotnet run.
 
 ## Specifications
